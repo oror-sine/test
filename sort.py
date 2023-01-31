@@ -2,7 +2,7 @@ import random
 import time
 
 def sort_test(func):
-    _list = [i for i in range(10000)]
+    _list = [i for i in range(10)]
     random.shuffle(_list)
     def wrapper(l=_list)->list:
         print("\n",func.__name__)
@@ -108,7 +108,7 @@ def merge_sort2(_list):
 
     return merged
 
-l = [i for i in range(100000)]
+l = [i for i in range(200000)]
 random.shuffle(l)
 
 # selection_sort()
